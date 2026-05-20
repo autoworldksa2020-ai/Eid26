@@ -125,9 +125,12 @@ makeDraggable(nameText);
 makeDraggable(titleText);
 
 function downloadCard() {
-  html2canvas(document.getElementById("card"), {
+  const card = document.getElementById("card");
+
+  html2canvas(card, {
     useCORS: true,
-    scale: 3
+    scale: 3,
+    backgroundColor: null
   }).then(canvas => {
     const link = document.createElement("a");
     link.download = "autoworld-greeting-card.png";
