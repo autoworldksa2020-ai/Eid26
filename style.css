@@ -96,6 +96,7 @@ button {
   aspect-ratio: 1080 / 1350;
   overflow: hidden;
   border-radius: 16px;
+  background: transparent;
 }
 
 .card img {
